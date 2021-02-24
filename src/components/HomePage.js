@@ -1,11 +1,12 @@
 import React from 'react'
 
 import puppyLittersBanner from '../assets/images/puppyLittersBanner.jpg'
+import {Link} from "react-router-dom"
 
 const HomePage = () => {
     return (
         <div>
-            <div className="px-8 mt-20 text-center">
+            <section className="px-8 md:p-20 my-20 text-center">
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet at beatae dicta dolores
                     esse ex ipsa iusto, labore laudantium magnam nisi veniam. A blanditiis dolorum harum ipsum laborum
@@ -13,22 +14,22 @@ const HomePage = () => {
                     Eligendi itaque modi nemo nostrum quisquam repudiandae sequi tempore. Consectetur dolorem eos, ex
                     hic
                 </p>
-            </div>
+            </section>
             
-            <div className="mt-20 flex flex-col md:flex-row items-center">
+            <section className="flex flex-col items-center p-4 py-8 bg-gray-200 md:p-12 md:flex-row">
                 <div className="flex-1">
                     <img src={puppyLittersBanner} alt="" />
                 </div>
-                <div className="flex-1 md:px-4 mt-4 md:mt-0">
+                <div className="flex-1 mt-4 md:px-8 md:mt-0">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eum
                         mollitia quia reprehenderit sint. Cumque laboriosam minima suscipit. Cupiditate
                         dolorem eius
                     </p>
                     <div className="flex justify-end mt-8">
-                        <button className="p-2 rounded text-white bg-gray-900">Voir la portée</button>
+                        <Link to="/puppy-litters/" className="p-2 text-white bg-gray-900 rounded hover:bg-gray-700">Voir la portée</Link>
                     </div>
                 </div>
-            </div>
+            </section>
         </div>
     )
 }

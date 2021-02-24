@@ -33,14 +33,14 @@ const Layout = props => {
     
     return (
         <div>
-            <header>
+            <header className="relative">
                 <NavBar />
                 {generateHeader(location.pathname)}
             </header>
             <main className="container">
                 {props.children}
             </main>
-            <footer className="mt-8 py-8 text-center text-white bg-gray-900">Je suis le footer</footer>
+            <footer className="py-8 text-center text-white bg-gray-800">Je suis le footer</footer>
         </div>
     )
 }

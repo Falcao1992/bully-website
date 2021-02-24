@@ -1,36 +1,47 @@
 import React from 'react'
-import {Link} from "react-router-dom"
 import {puppyList} from "../puppyList/puppyList"
+import PuppyCard from "./PuppyCard"
+
+import {InlineIcon } from '@iconify/react';
+import maleIcon from '@iconify/icons-ion/male';
+import femaleIcon from '@iconify/icons-ion/female';
 
 const PuppyLitters = () => {
     return (
-        <div>
-            <div className="mt-20">
-                <h2 className="text-center text-4xl mb-8">Les Femelles</h2>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-y-12 gap-x-4">
-                    {puppyList.filter((puppy) => puppy.sexe === "female").map((puppy) => {
-                        return (
-                            <Link key={puppy.id} to={`/puppy/${puppy.id}`}>
-                                <h3 className="text-center pb-4">{puppy.name}</h3>
-                                <img className="w-full block rounded-xl" src={puppy.picture} alt={puppy.name} />
-                            </Link>
-                        )
-                    })}
-                </div>
-            </div>
-    
-            <div className="mt-20">
-                <h2 className="text-center text-4xl mb-8">Les Male</h2>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-y-12 gap-x-4">
-                    {puppyList.filter((puppy) => puppy.sexe === "male").map((puppy) => {
-                        return (
-                            <Link key={puppy.id} to={`/puppy/${puppy.id}`}>
-                                <h3 className="text-center pb-4">{puppy.name}</h3>
-                                <img className="w-full block rounded-xl" src={puppy.picture} alt={puppy.name} />
-                            </Link>
-                        )
-                    })}
-                </div>
+        <div className="">
+            
+            <section className="px-8 md:p-20 my-20 text-center">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet at beatae dicta dolores
+                    esse ex ipsa iusto, labore laudantium magnam nisi veniam. A blanditiis dolorum harum ipsum laborum
+                    odit quia?
+                    Eligendi itaque modi nemo nostrum quisquam repudiandae sequi tempore. Consectetur dolorem eos, ex
+                    hic
+                </p>
+            </section>
+            
+            <div className="bg-gradient-to-b from-pink-200 to-blue-200">
+                <section className="p-4 py-8 md:p-20">
+                    <h2 className="mb-8 text-4xl font-medium text-center tracking-wider">Les Femelles <InlineIcon className="inline text-pink-400" icon={femaleIcon}/></h2>
+                    <ul className="grid grid-cols-2 md:grid-cols-7 gap-y-12 gap-x-8">
+                        {puppyList.filter((puppy) => puppy.sexe === "female").map((puppy) => {
+                            return (
+                                <PuppyCard key={puppy.id} puppy={puppy} />
+                            )
+                        })}
+                    </ul>
+                </section>
+                
+                <section className="p-4 py-8 md:p-20">
+                    <h2 className="mb-8 text-4xl font-medium text-center tracking-wider">Les Mâle <InlineIcon className="inline text-blue-400" icon={maleIcon}/></h2>
+                    <ul className="grid grid-cols-5 md:grid-cols-7 gap-y-12 gap-x-8">
+                        {puppyList.filter((puppy) => puppy.sexe === "male").map((puppy) => {
+                            return (
+                                <PuppyCard key={puppy.id} puppy={puppy} />
+                            )
+                        })}
+                    </ul>
+                </section>
             </div>
         </div>
     )

@@ -2,9 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+
 body {
     font-family: 'Zilla Slab', serif;
 }
+
 
 @layer base {
     h1 {
