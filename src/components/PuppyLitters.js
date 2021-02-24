@@ -20,7 +20,7 @@ const PuppyLitters = () => {
                 </p>
             </section>
             
-            <div className="bg-gradient-to-b from-pink-200 to-blue-200">
+            <div className="bg-gradient-to-b from-pink-100 to-blue-100">
                 <section className="p-4 py-8 md:p-20">
                     <h2 className="mb-8 text-4xl font-medium text-center tracking-wider">Les Femelles <InlineIcon className="inline text-pink-400" icon={femaleIcon}/></h2>
                     <ul className="grid grid-cols-2 md:grid-cols-7 gap-y-12 gap-x-8">
@@ -34,7 +34,7 @@ const PuppyLitters = () => {
                 
                 <section className="p-4 py-8 md:p-20">
                     <h2 className="mb-8 text-4xl font-medium text-center tracking-wider">Les Mâle <InlineIcon className="inline text-blue-400" icon={maleIcon}/></h2>
-                    <ul className="grid grid-cols-5 md:grid-cols-7 gap-y-12 gap-x-8">
+                    <ul className="grid grid-cols-2 md:grid-cols-7 gap-y-12 gap-x-8">
                         {puppyList.filter((puppy) => puppy.sexe === "male").map((puppy) => {
                             return (
                                 <PuppyCard key={puppy.id} puppy={puppy} />

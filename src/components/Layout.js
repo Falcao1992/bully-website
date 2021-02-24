@@ -37,7 +37,7 @@ const Layout = props => {
                 <NavBar />
                 {generateHeader(location.pathname)}
             </header>
-            <main className="container">
+            <main>
                 {props.children}
             </main>
             <footer className="py-8 text-center text-white bg-gray-800">Je suis le footer</footer>

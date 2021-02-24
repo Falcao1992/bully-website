@@ -11,7 +11,7 @@ const PuppyCard = ({puppy}) => {
                          alt={puppy.name} />
                 </Link>
             </div>
-            <h3 className="pt-2 text-center">{puppy.name}</h3>
+            <h3 className="pt-2 text-center capitalize">{puppy.name}</h3>
         </li>
     )
 }
