@@ -7,11 +7,23 @@ import puppyLittersBanner from "../assets/images/puppyLittersBanner.jpg"
 import puppyBanner from "../assets/images/puppyBanner.jpg"
 import genealogyBanner from "../assets/images/genealogyBanner.jpg"
 import contactBanner from "../assets/images/contactBanner.jpeg"
+
+import { Icon} from '@iconify/react';
+import arrowUpCircle from '@iconify/icons-bi/arrow-up-circle';
+
 import {useLocation} from "react-router-dom"
 
 const Layout = props => {
     
     let location = useLocation()
+    
+    const redirectArrowUp = () => {
+        window.scrollTo({
+            top:0,
+            left:0,
+            behavior: "smooth"
+        })
+    };
     
     const generateHeader = (path) => {
         if (path === '/') {
@@ -45,6 +57,9 @@ const Layout = props => {
             <main>
                 {props.children}
             </main>
+            <div className="fixed bottom-4 right-3 text-yellow-400" onClick={redirectArrowUp}>
+                <Icon icon={arrowUpCircle} width="50px" height="50px" />
+            </div>
             <footer className="py-8 text-center text-white bg-gray-800">Je suis le footer</footer>
         </div>
     )
