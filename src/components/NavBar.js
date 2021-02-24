@@ -54,6 +54,8 @@ const NavBar = () => {
                                 <NavLink to="/puppy-litters/" activeClassName="bg-gray-900"
                                          className="px-3 py-2 text-sm font-medium rounded-md hover:bg-gray-700">Notre
                                     Portée</NavLink>
+                                <NavLink to="/contact/" activeClassName="bg-gray-900"
+                                         className="px-3 py-2 text-sm font-medium rounded-md hover:bg-gray-700">Contact</NavLink>
                             </div>
                         </div>
                     </div>
@@ -76,6 +78,11 @@ const NavBar = () => {
                              activeClassName="bg-gray-900"
                              className="block px-3 py-2 font-medium text-center rounded-md">
                         La portée
+                    </NavLink>
+                    <NavLink to="/contact/"
+                             activeClassName="bg-gray-900"
+                             className="block px-3 py-2 font-medium text-center rounded-md">
+                        Contact
                     </NavLink>
                 </div>}
             </div>

@@ -18,9 +18,9 @@ const Puppy = () => {
     
     return (
         <div>
-            <section className="flex flex-col p-4 py-8 md:py-20 md:px-32 md:flex-row items-center">
-                <div className="bg-pink-300 p-1 rounded-lg mb-10 md:mr-10 md:mb-0 md:w-1/4">
-                    <a className="bg-white block p-1 rounded-lg"
+            <section className="flex flex-col items-center p-4 py-8 md:py-20 md:px-32 md:flex-row">
+                <div className="p-1 mb-10 bg-pink-300 rounded-lg md:mr-10 md:mb-0 md:w-1/4">
+                    <a className="block p-1 bg-white rounded-lg"
                        href={currentPuppy.picture}
                        target="_blank"
                        rel="noopener noreferrer"
@@ -38,8 +38,8 @@ const Puppy = () => {
             </section>
             
             <section className="md:py-20 md:px-32">
-                <h2 className="text-center capitalize">Photos de {currentPuppy.name}</h2>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-y-12 gap-x-8 px-4 py-8 md:px-0">
+                <h2 className="text-center">Photos de <span className="capitalize">{currentPuppy.name}</span></h2>
+                <div className="grid grid-cols-2 px-4 py-8 md:grid-cols-4 gap-y-12 gap-x-8 md:px-0">
                     {currentPuppy.pictures && currentPuppy.pictures.map((picture) => {
                         return (
                             <a key={picture.id} href={picture.url} target="_blank" rel="noopener noreferrer" aria-label="fullscreen">

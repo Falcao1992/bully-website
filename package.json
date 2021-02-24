@@ -38,6 +38,8 @@
     ]
   },
   "devDependencies": {
+    "@iconify/icons-codicon": "^1.1.9",
+    "@iconify/icons-emojione-monotone": "^1.1.0",
     "@iconify/icons-ion": "^1.1.2",
     "@iconify/react": "^1.1.4",
     "@tailwindcss/postcss7-compat": "^2.0.3",

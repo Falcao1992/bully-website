@@ -6,6 +6,7 @@ import Puppy from "./components/Puppy"
 
 import LayoutManage from "./components/LayoutManage"
 import Genealogy from "./components/Genealogy"
+import Contact from "./components/Contact"
 
 const App = () => {
     
@@ -16,6 +17,7 @@ const App = () => {
                 <LayoutManage path="/genealogy" component={Genealogy} />
                 <LayoutManage path="/puppy-litters" component={PuppyLitters} />
                 <LayoutManage path="/puppy/:id" component={Puppy} />
+                <LayoutManage path="/contact" component={Contact} />
             </Switch>
         </Router>
     )

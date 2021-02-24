@@ -6,6 +6,7 @@ import homeBanner from "../assets/images/homeBanner.jpg"
 import puppyLittersBanner from "../assets/images/puppyLittersBanner.jpg"
 import puppyBanner from "../assets/images/puppyBanner.jpg"
 import genealogyBanner from "../assets/images/genealogyBanner.jpg"
+import contactBanner from "../assets/images/contactBanner.jpeg"
 import {useLocation} from "react-router-dom"
 
 const Layout = props => {
@@ -25,10 +26,14 @@ const Layout = props => {
         } else if (path === '/genealogy/') {
             console.log("GENEALOGY")
             return <Header banner={genealogyBanner} objectPos={'bottom'} />
+        } else if(path === '/contact/') {
+            console.log("CONTACT")
+            return <Header banner={contactBanner} objectPos={'bottom'} />
         } else {
             console.log("AUTRE")
             console.log(path)
         }
+        
     }
     
     return (
