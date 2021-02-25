@@ -70,7 +70,7 @@ const Layout = props => {
             <main>
                 {props.children}
             </main>
-            <div className="fixed bottom-4 right-3 text-yellow-400" onClick={redirectArrowUp}>
+            <div className="fixed bottom-4 right-3 md:right-6 md:bottom-6 text-yellow-400 cursor-pointer" onClick={redirectArrowUp}>
                 <Icon icon={arrowUpCircle} width="50px" height="50px" />
             </div>
             <Footer closeBurgerTimeout={closeBurgerTimeout}/>

@@ -3,6 +3,7 @@ import React from 'react'
 import mobilePhone from '@iconify/icons-emojione-monotone/mobile-phone';
 import mailIcon from '@iconify/icons-codicon/mail';
 import { InlineIcon } from '@iconify/react';
+import facebookRect from '@iconify/icons-brandico/facebook-rect';
 
 
 
@@ -32,7 +33,7 @@ const Contact = () => {
                                 fugiat illum molestiae possimus? Adipisci alias aliquid aperiam aut autem eum .
                             </p>
                             <ul>
-                                <li><a className="text-xl" href="tel:0668626414" aria-label="phone"><InlineIcon className="inline" icon={mobilePhone}/> 0668626414</a></li>
+                                <li className="mb-2"><a className="text-xl font-sans" href="tel:0668626414" aria-label="phone"><InlineIcon className="inline" icon={mobilePhone}/> 0668626414</a></li>
                                 <li><a className="text-xl" href="mailto:lepine_julie@orange.fr" aria-label="mail"><InlineIcon className="inline" icon={mailIcon} /> lepine_julie@orange.fr</a></li>
                             </ul>
                         </div>
@@ -46,8 +47,8 @@ const Contact = () => {
                                 fugiat illum molestiae possimus? Adipisci alias aliquid aperiam aut autem eum .
                             </p>
                             <ul>
-                                <li><a className="text-xl" href="tel:0668684272" aria-label="phone"><InlineIcon className="inline" icon={mobilePhone}/> 0668684272</a></li>
-                                <li><a href="https://msng.link/o/?Steve BullyXl=fm">Message me on Facebook Messenger</a></li>
+                                <li className="mb-2"><a className="text-xl font-sans" href="tel:0668684272" aria-label="phone"><InlineIcon className="inline" icon={mobilePhone}/> 0668684272</a></li>
+                                <li><a className="text-xl" href="https://www.facebook.com/profile.php?id=100010109858069" target="_blank" rel="noopener noreferrer"><InlineIcon className="inline" icon={facebookRect}/> Steve BullyXl</a></li>
                             </ul>
                         </div>
                     </div>

@@ -1,5 +1,6 @@
 import React from "react"
-import {NavLink} from "react-router-dom"
+import {NavLink, Link} from "react-router-dom"
+import logo from "../assets/images/logo.png"
 
 const NavBar = ({activeBurger, closeBurgerTimeout, handleOpenBurger}) => {
    
@@ -9,34 +10,18 @@ const NavBar = ({activeBurger, closeBurgerTimeout, handleOpenBurger}) => {
             <div className="px-2 mx-auto max-w-7xl sm:px-6 lg:px-8">
                 <div className="relative flex items-center justify-between h-16 z-50 bg-gray-800">
                     <div className="absolute inset-y-0 left-0 flex items-center sm:hidden ">
-                        <button type="button"
+                        <button type="button" aria-controls="mobile-menu" aria-expanded="false" onClick={handleOpenBurger}
                                 className="inline-flex items-center justify-center p-2 text-gray-400 rounded-md hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
-                                aria-controls="mobile-menu"
-                                aria-expanded="false"
-                                onClick={handleOpenBurger}
                         >
                             <span className="sr-only">Open main menu</span>
-                            {!activeBurger ? <svg className="block w-6 h-6"
-                                                  xmlns="http://www.w3.org/2000/svg"
-                                                  fill="none"
-                                                  viewBox="0 0 24 24"
-                                                  stroke="currentColor"
-                                                  aria-hidden="true">
-                                    <path strokeLinecap="round"
-                                          strokeLinejoin="round"
-                                          strokeWidth="2"
-                                          d="M4 6h16M4 12h16M4 18h16" />
+                            {!activeBurger
+                                ?
+                                <svg className="block w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
                                 </svg>
-                                : <svg className="block w-6 h-6"
-                                       xmlns="http://www.w3.org/2000/svg"
-                                       fill="none"
-                                       viewBox="0 0 24 24"
-                                       stroke="currentColor"
-                                       aria-hidden="true">
-                                    <path strokeLinecap="round"
-                                          strokeLinejoin="round"
-                                          strokeWidth="2"
-                                          d="M6 18L18 6M6 6l12 12" />
+                                :
+                                <svg className="block w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
                                 </svg>}
                         </button>
                     </div>
@@ -54,6 +39,11 @@ const NavBar = ({activeBurger, closeBurgerTimeout, handleOpenBurger}) => {
                                          className="px-3 py-2 text-sm font-medium rounded-md hover:bg-gray-700">Contact</NavLink>
                             </div>
                         </div>
+                    </div>
+                    <div>
+                        <Link to="/puppy-litters/">
+                        <img className="h-12" src={logo} alt="chiot leve la patte" />
+                        </Link>
                     </div>
                 </div>
             </div>

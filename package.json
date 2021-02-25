@@ -39,6 +39,7 @@
   },
   "devDependencies": {
     "@iconify/icons-bi": "^1.1.2",
+    "@iconify/icons-brandico": "^1.1.0",
     "@iconify/icons-codicon": "^1.1.9",
     "@iconify/icons-emojione-monotone": "^1.1.0",
     "@iconify/icons-ion": "^1.1.2",
