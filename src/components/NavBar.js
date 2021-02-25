@@ -6,7 +6,7 @@ const NavBar = ({activeBurger, closeBurgerTimeout, handleOpenBurger}) => {
    
 
     return (
-        <nav className="fixed w-full bg-gray-800 z-50">
+        <nav className="fixed top-0 w-full bg-gray-800 z-50">
             <div className="px-2 mx-auto max-w-7xl sm:px-6 lg:px-8">
                 <div className="relative flex items-center justify-between h-16 z-50 bg-gray-800">
                     <div className="absolute inset-y-0 left-0 flex items-center sm:hidden ">

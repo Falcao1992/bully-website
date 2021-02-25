@@ -1,16 +1,27 @@
 import React from 'react'
+import {Link} from "react-router-dom"
 import {puppyList} from "../puppyList/puppyList"
 import PuppyCard from "./PuppyCard"
 
 import {InlineIcon} from '@iconify/react'
 import maleIcon from '@iconify/icons-ion/male'
 import femaleIcon from '@iconify/icons-ion/female'
+import bullyPuppy from "../assets/images/bullyPuppy.png"
 
 const PuppyLitters = () => {
     return (
         <div className="">
-            <section className="mx-4 my-8 md:px-28 md:py-14">
-                <h2>La portée</h2>
+            <section className="mx-4 my-8 md:px-28 md:py-14 relative">
+                <img className="fixed top-56 right-0 opacity-20 -z-10"
+                     src={bullyPuppy}
+                     alt="bully's puppy background transparent" />
+                <h1>La portée</h1>
+                <ul className="mb-6 text-sm font-semibold">
+                    <li>Mère: <Link className="text-pink-400 ml-0.5" to="/genealogy#shila">Shila</Link></li>
+                    <li>Père: <Link className="text-blue-400 ml-0.5" to="/genealogy#zorg">Zorg</Link></li>
+                    <li>Nombres de Chiots: 13</li>
+                    <li>Date de naissance: 01/11/2019</li>
+                </ul>
                 <p className="text-lg">
                     Nous sommes ravis de vous présenter la portée de Shila et de Zorg, tous deux de magnifique American
                     Bully XL, Shila leurs à donner naissance le 21 janvier 2021 à une grande portée de 13 adorable chiots, dont 7 femelles et 6

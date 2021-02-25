@@ -22,7 +22,7 @@ const Genealogy = () => {
                 </p>
             </section>
             
-            <section className="flex flex-col p-4 py-8 md:p-20 md:flex-row items-center bg-pink-100">
+            <section id="shila" className="flex flex-col p-4 py-8 md:p-20 md:flex-row items-center bg-pink-100">
                 <a href={momPicture} target="_blank" rel="noopener noreferrer" aria-label="fullscreen">
                     <img className="w-full md:max-w-xs rounded-lg" src={momPicture} alt="" />
                 </a>
@@ -32,7 +32,6 @@ const Genealogy = () => {
                         <li>Poids: 34kg</li>
                         <li>Date de naissance: 01/11/2019</li>
                         <li>Couleur:  Bleu</li>
-                        
                     </ul>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquid asperiores
@@ -42,7 +41,7 @@ const Genealogy = () => {
                 </div>
             </section>
             
-            <section className="flex flex-col p-4 py-8 md:p-20 md:flex-row items-center bg-blue-100">
+            <section id="zorg" className="flex flex-col p-4 py-8 md:p-20 md:flex-row items-center bg-blue-100">
                 <a className="md:order-1" href={dadPicture} target="_blank" rel="noopener noreferrer" aria-label="fullscreen">
                     <img className="w-full md:max-w-xs rounded-lg" src={dadPicture} alt="" />
                 </a>

@@ -63,7 +63,7 @@ const Layout = props => {
     
     return (
         <div>
-            <header className="relative">
+            <header className="relative z-40">
                 <NavBar activeBurger={activeBurger} setActiveBurger={setActiveBurger} handleOpenBurger={handleOpenBurger} closeBurgerTimeout={closeBurgerTimeout}  />
                 {generateHeader(location.pathname)}
             </header>
