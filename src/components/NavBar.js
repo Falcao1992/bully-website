@@ -1,23 +1,9 @@
-import React, {useState, useEffect} from "react"
+import React from "react"
 import {NavLink} from "react-router-dom"
 
-const NavBar = (props) => {
-    const [activeBurger, setActiveBurger] = useState(false)
-    
-    const handleOpenBurger = () => {
-        setActiveBurger(!activeBurger)
-    }
-    
-    const closeBurgerTimeout = () => {
-        setTimeout(() => {
-            setActiveBurger(false)
-        }, 700)
-    };
-    
-    useEffect(() => {
-    
-    },[])
-    
+const NavBar = ({activeBurger, closeBurgerTimeout, handleOpenBurger}) => {
+   
+
     return (
         <nav className="fixed w-full bg-gray-800 z-50">
             <div className="px-2 mx-auto max-w-7xl sm:px-6 lg:px-8">
@@ -62,7 +48,7 @@ const NavBar = (props) => {
                                 <NavLink to="/genealogy/" onClick={closeBurgerTimeout} activeClassName="bg-gray-900"
                                          className="px-3 py-2 text-sm font-medium rounded-md hover:bg-gray-700">Généalogie</NavLink>
                                 <NavLink to="/puppy-litters/" onClick={closeBurgerTimeout} activeClassName="bg-gray-900"
-                                         className="px-3 py-2 text-sm font-medium rounded-md hover:bg-gray-700">Notre
+                                         className="px-3 py-2 text-sm font-medium rounded-md hover:bg-gray-700">La
                                     Portée</NavLink>
                                 <NavLink to="/contact/" onClick={closeBurgerTimeout} activeClassName="bg-gray-900"
                                          className="px-3 py-2 text-sm font-medium rounded-md hover:bg-gray-700">Contact</NavLink>

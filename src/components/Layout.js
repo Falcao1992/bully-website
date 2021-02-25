@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 import Header from "./Header"
 import NavBar from "./NavBar"
@@ -12,8 +12,21 @@ import { Icon} from '@iconify/react';
 import arrowUpCircle from '@iconify/icons-bi/arrow-up-circle';
 
 import {useLocation} from "react-router-dom"
+import Footer from "./Footer"
 
 const Layout = props => {
+    
+    const [activeBurger, setActiveBurger] = useState(false)
+    
+    const handleOpenBurger = () => {
+        setActiveBurger(!activeBurger)
+    }
+    
+    const closeBurgerTimeout = () => {
+        setTimeout(() => {
+            setActiveBurger(false)
+        }, 700)
+    };
     
     let location = useLocation()
     
@@ -51,7 +64,7 @@ const Layout = props => {
     return (
         <div>
             <header className="relative">
-                <NavBar />
+                <NavBar activeBurger={activeBurger} setActiveBurger={setActiveBurger} handleOpenBurger={handleOpenBurger} closeBurgerTimeout={closeBurgerTimeout}  />
                 {generateHeader(location.pathname)}
             </header>
             <main>
@@ -60,7 +73,7 @@ const Layout = props => {
             <div className="fixed bottom-4 right-3 text-yellow-400" onClick={redirectArrowUp}>
                 <Icon icon={arrowUpCircle} width="50px" height="50px" />
             </div>
-            <footer className="py-8 text-center text-white bg-gray-800">Je suis le footer</footer>
+            <Footer closeBurgerTimeout={closeBurgerTimeout}/>
         </div>
     )
 }

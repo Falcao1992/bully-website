@@ -11,8 +11,9 @@ import femaleIcon from "@iconify/icons-ion/female"
 const Genealogy = () => {
     return (
         <div className="">
-            <section className="px-8 md:p-20 my-20 text-center">
-                <p>
+            <section className="mx-4 my-8 md:px-28 md:py-14">
+                <h2>Les Parents</h2>
+                <p className="text-lg">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet at beatae dicta dolores
                     esse ex ipsa iusto, labore laudantium magnam nisi veniam. A blanditiis dolorum harum ipsum laborum
                     odit quia?
@@ -27,6 +28,12 @@ const Genealogy = () => {
                 </a>
                 <div className="my-4 md:w-3/5 md:mx-auto">
                     <h3 className="mb-6 text-3xl">Shila (Mère) <InlineIcon className="inline text-pink-400" icon={femaleIcon}/></h3>
+                    <ul className="mb-6 text-sm font-semibold">
+                        <li>Poids: 34kg</li>
+                        <li>Date de naissance: 01/11/2019</li>
+                        <li>Couleur:  Bleu</li>
+                        
+                    </ul>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquid asperiores
                         blanditiis cumque ea eos eum explicabo iure, libero natus nesciunt nostrum odio perspiciatis
@@ -41,6 +48,11 @@ const Genealogy = () => {
                 </a>
                 <div className="my-4 md:w-3/5 md:mx-auto md:text-right">
                     <h3 className="mb-6 text-3xl">Zorg (Père) <InlineIcon className="inline text-blue-400" icon={maleIcon}/></h3>
+                    <ul className="mb-6 text-sm font-semibold">
+                        <li>Poids: 44kg</li>
+                        <li>Date de naissance: 31/08/2019</li>
+                        <li>Couleur:  Bleu</li>
+                    </ul>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquid asperiores
                         blanditiis cumque ea eos eum explicabo iure, libero natus nesciunt nostrum odio perspiciatis

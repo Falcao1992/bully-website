@@ -21,10 +21,7 @@ const HomePage = () => {
                     <img src={puppyLittersBanner} alt="" />
                 </div>
                 <div className="flex-1 mt-4 md:px-8 md:mt-0">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eum
-                        mollitia quia reprehenderit sint. Cumque laboriosam minima suscipit. Cupiditate
-                        dolorem eius
-                    </p>
+                    <p>Tout nos chiots de la portée, cherchant une famille</p>
                     <div className="flex justify-end mt-8">
                         <Link to="/puppy-litters/" className="p-2 text-white bg-gray-900 rounded hover:bg-gray-700">Voir la portée</Link>
                     </div>

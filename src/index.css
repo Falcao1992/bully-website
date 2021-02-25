@@ -9,11 +9,14 @@ body {
 
 
 @layer base {
+    html {
+        @apply bg-gray-50
+    }
     h1 {
         @apply text-5xl;
     }
     h2 {
-        @apply text-4xl;
+        @apply text-4xl mb-6;
     }
     h3 {
         @apply text-xl;

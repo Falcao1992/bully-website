@@ -1,6 +1,7 @@
 export const puppyList = [
     {
         name: "orange",
+        birthday: "21/01/2021",
         sexe: "female",
         picture: "https://placekitten.com/200/201",
         pictures: [
@@ -15,6 +16,7 @@ export const puppyList = [
     },
     {
         name: "bleue",
+        birthday: "21/01/2021",
         sexe: "female",
         picture: "https://placekitten.com/200/202",
         pictures: [
@@ -29,6 +31,7 @@ export const puppyList = [
     },
     {
         name: "vert",
+        birthday: "21/01/2021",
         sexe: "female",
         picture: "https://placekitten.com/200/203",
         pictures: [
@@ -43,6 +46,7 @@ export const puppyList = [
     },
     {
         name: "jaune",
+        birthday: "21/01/2021",
         sexe: "female",
         picture: "https://placekitten.com/200/204",
         pictures: [
@@ -57,6 +61,7 @@ export const puppyList = [
     },
     {
         name: "rose",
+        birthday: "21/01/2021",
         sexe: "female",
         picture: "https://placekitten.com/200/205",
         pictures: [
@@ -71,6 +76,7 @@ export const puppyList = [
     },
     {
         name: "gris",
+        birthday: "21/01/2021",
         sexe: "female",
         picture: "https://placekitten.com/200/206",
         pictures: [
@@ -85,6 +91,7 @@ export const puppyList = [
     },
     {
         name: "blanche",
+        birthday: "21/01/2021",
         sexe: "female",
         picture: "https://placekitten.com/200/217",
         pictures: [
@@ -99,6 +106,7 @@ export const puppyList = [
     },
     {
         name: "marron",
+        birthday: "21/01/2021",
         sexe: "male",
         picture: "https://placekitten.com/200/208",
         pictures: [
@@ -113,6 +121,7 @@ export const puppyList = [
     },
     {
         name: "vert",
+        birthday: "21/01/2021",
         sexe: "male",
         picture: "https://placekitten.com/200/209",
         pictures: [
@@ -127,6 +136,7 @@ export const puppyList = [
     },
     {
         name: "violet",
+        birthday: "21/01/2021",
         sexe: "male",
         picture: "https://placekitten.com/200/210",
         pictures: [
@@ -141,6 +151,7 @@ export const puppyList = [
     },
     {
         name: "noire",
+        birthday: "21/01/2021",
         sexe: "male",
         picture: "https://placekitten.com/200/211",
         pictures: [
@@ -155,6 +166,7 @@ export const puppyList = [
     },
     {
         name: "rouge",
+        birthday: "21/01/2021",
         sexe: "male",
         picture: "https://placekitten.com/200/212",
         pictures: [
@@ -169,6 +181,7 @@ export const puppyList = [
     },
     {
         name: "pourpre",
+        birthday: "21/01/2021",
         sexe: "male",
         picture: "https://placekitten.com/200/213",
         pictures: [

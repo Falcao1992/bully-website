@@ -9,16 +9,21 @@ import { InlineIcon } from '@iconify/react';
 const Contact = () => {
     return (
         <div>
-            <section className="px-8 md:p-20 my-20 text-center">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet at beatae dicta dolores
-                    esse ex ipsa iusto, labore laudantium magnam nisi veniam. A blanditiis dolorum harum ipsum laborum
-                </p>
+            <section className="mx-4 my-8 md:px-28 md:py-14">
+                <h2>Modalité de Réservation</h2>
+                <ul className="space-y-4">
+                    <li>- Les chiots peuvent être réservés dès l’âge de 2 semaines, mais ne quitteront l’élevage pour la vente définitive qu'à partir de 8 semaines une fois sevré.</li>
+                    <li>- Tous nos chiots vendus sont pucés, vaccinés, et inscrits au LOF.</li>
+                    <li>- Ils sont munis d’un carnet de santé, d’un certificat de santé signé par notre vétérinaire et d’un livret d'accueil du chiot. Son pedigree ou dans l'attente de sa réception celui des parents.</li>
+                    <li>- Un paquet de ses croquettes habituelles vous sera offert.</li>
+                    <li>- Comme pour l'arrivée d'un nouveau-né au sein d'une famille, l'arrivée d'un chiot, votre nouveau compagnon, doit être pensée et mûrement réfléchie.</li>
+                </ul>
+                <p className="text-center my-8 font-semibold">Pour valider une réservation un acompte vous sera demandé.</p>
             </section>
             
-            <section className="flex flex-col items-center p-4 py-8 md:py-20 md:px-32 bg-gray-200">
-                <h2 className="text-center mb-8">Nous Contactez</h2>
-                <div className="flex flex-col md:p-4 justify-evenly md:flex-row space-y-6 md:space-y-0">
+            <section className="flex flex-col items-center p-4 py-8 md:py-20 md:px-32 bg-gray-300">
+                <h2 className="text-center">Nous Contactez</h2>
+                <div className="flex flex-col md:p-4 justify-evenly place-items-start md:flex-row space-y-6 md:space-y-0">
                     <div className="flex flex-col items-center text-center md:w-1/4">
                         <img className="rounded-lg w-3/4" src="https://i.pravatar.cc/305" alt="" />
                         <div className="my-4">
@@ -27,8 +32,8 @@ const Contact = () => {
                                 fugiat illum molestiae possimus? Adipisci alias aliquid aperiam aut autem eum .
                             </p>
                             <ul>
-                                <li><a className="text-xl" href="tel:0668626414" aria-label="phone"><InlineIcon className="inline" icon={mobilePhone}/> 0668626415</a></li>
-                                <li><a className="text-xl" href="mailto:julie.lepine@test.com" aria-label="mail"><InlineIcon className="inline" icon={mailIcon} /> julie.lepine@test.com</a></li>
+                                <li><a className="text-xl" href="tel:0668626414" aria-label="phone"><InlineIcon className="inline" icon={mobilePhone}/> 0668626414</a></li>
+                                <li><a className="text-xl" href="mailto:lepine_julie@orange.fr" aria-label="mail"><InlineIcon className="inline" icon={mailIcon} /> lepine_julie@orange.fr</a></li>
                             </ul>
                         </div>
                     </div>
@@ -36,13 +41,13 @@ const Contact = () => {
                     <div className="flex flex-col justify-center items-center text-center md:w-1/4">
                         <img className="rounded-lg w-3/4" src="https://i.pravatar.cc/302" alt="" />
                         <div className="my-4">
-                            <p className="text-2xl">Julie Lépine</p>
+                            <p className="text-2xl">Steven Thang</p>
                             <p className="my-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aspernatur atque
                                 fugiat illum molestiae possimus? Adipisci alias aliquid aperiam aut autem eum .
                             </p>
                             <ul>
-                                <li><a className="text-xl" href="tel:0668626414" aria-label="phone"><InlineIcon className="inline" icon={mobilePhone}/> 0668626415</a></li>
-                                <li><a className="text-xl" href="mailto:julie.lepine@test.com" aria-label="mail"><InlineIcon className="inline" icon={mailIcon} /> julie.lepine@test.com</a></li>
+                                <li><a className="text-xl" href="tel:0668684272" aria-label="phone"><InlineIcon className="inline" icon={mobilePhone}/> 0668684272</a></li>
+                                <li><a href="https://msng.link/o/?Steve BullyXl=fm">Message me on Facebook Messenger</a></li>
                             </ul>
                         </div>
                     </div>
