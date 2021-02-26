@@ -21,7 +21,10 @@ const HomePage = () => {
                 </p>
             </section>
             
-            <section className="flex flex-col items-center p-4 py-8 bg-gray-300 md:p-12 md:flex-row">
+            <section className="bg-gray-300">
+                <div className="flex flex-col items-center p-4 py-8 bg-gray-300 md:p-12 md:flex-row md:w-4/5 md:mx-auto">
+                
+                
                 <div className="flex-1">
                     <img src={puppyLittersBanner} alt="" />
                 </div>
@@ -31,6 +34,7 @@ const HomePage = () => {
                         <Link to="/puppy-litters/" className="p-2 text-white bg-gray-900 rounded hover:bg-gray-700">Voir
                             la portée</Link>
                     </div>
+                </div>
                 </div>
             </section>
         </div>

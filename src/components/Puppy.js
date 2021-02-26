@@ -18,31 +18,39 @@ const Puppy = () => {
     
     return (
         <div>
-            <section className="flex flex-col items-center p-4 py-8 md:py-20 md:px-32 md:flex-row">
-                <div className="p-1 mb-10 bg-pink-300 rounded-lg md:mr-10 md:mb-0 md:w-1/4">
-                    <a className="block p-1 bg-white rounded-lg"
-                       href={currentPuppy.picture}
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       aria-label="fullscreen">
-                        <img className="w-full rounded-lg"
-                             src={currentPuppy.picture}
-                             alt={currentPuppy.name} />
-                    </a>
+            <section>
+                <div className="flex flex-col items-center p-4 py-8 md:py-20 md:px-32 md:flex-row md:w-4/5 md:mx-auto">
+                    
+                    
+                    <div className="p-1 mb-10 bg-pink-300 rounded-lg md:mr-10 md:mb-0 md:w-1/4">
+                        <a className="block p-1 bg-white rounded-lg"
+                           href={currentPuppy.picture}
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="fullscreen">
+                            <img className="w-full rounded-lg"
+                                 src={currentPuppy.picture}
+                                 alt={currentPuppy.name} />
+                        </a>
+                    </div>
+                    
+                    <ul className="space-y-2">
+                        <li className="capitalize">Nom: {currentPuppy.name}</li>
+                        <li>Sexe: {currentPuppy.sexe}</li>
+                    </ul>
                 </div>
-                
-                <ul className="space-y-2">
-                    <li className="capitalize">Nom: {currentPuppy.name}</li>
-                    <li>Sexe: {currentPuppy.sexe}</li>
-                </ul>
             </section>
             
-            <section className="md:py-20 md:px-32">
+            <section className="p-4 py-8 md:py-20 md:px-32 bg-gray-300">
                 <h2 className="text-center">Photos de <span className="capitalize">{currentPuppy.name}</span></h2>
-                <div className="grid grid-cols-2 px-4 py-8 md:grid-cols-4 gap-y-12 gap-x-8 md:px-0">
+                <div className="grid grid-cols-2 px-4 py-8 md:grid-cols-5 gap-y-12 gap-x-8 md:px-0">
                     {currentPuppy.pictures && currentPuppy.pictures.map((picture) => {
                         return (
-                            <a key={picture.id} href={picture.url} target="_blank" rel="noopener noreferrer" aria-label="fullscreen">
+                            <a key={picture.id}
+                               href={picture.url}
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               aria-label="fullscreen">
                                 <img src={picture.url} alt={picture.alt} />
                             </a>
                         )

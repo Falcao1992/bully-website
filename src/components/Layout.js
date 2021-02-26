@@ -50,7 +50,7 @@ const Layout = props => {
             return <Header banner={puppyBanner} objectPos={'bottom'} />
         } else if (path === '/genealogy/') {
             console.log("GENEALOGY")
-            return <Header banner={genealogyBanner} objectPos={'bottom'} />
+            return <Header banner={genealogyBanner} objectPos={'center'} />
         } else if(path === '/contact/') {
             console.log("CONTACT")
             return <Header banner={contactBanner} objectPos={'bottom'} />
