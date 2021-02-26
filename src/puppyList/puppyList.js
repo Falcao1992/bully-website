@@ -1,12 +1,16 @@
 import puppyFemaleBrown from "../assets/images/puppyFace/puppyFemaleBrown.jpg"
 import puppyFemaleOrange from "../assets/images/puppyFace/puppyFemaleOrange.jpg"
+
 import puppyFemalePurple from "../assets/images/puppyFace/puppyFemalePurple.jpg"
+import puppyFemalePurple2 from "../assets/images/puppyFace/puppyFemalePurple2.jpg"
+
 import puppyFemaleWhite from "../assets/images/puppyFace/puppyFemaleWhite.jpg"
 import FemalewithoutCollar from "../assets/images/puppyFace/puppyFemalewithoutCollar.jpg"
 import puppyFemaleYellow from "../assets/images/puppyFace/puppyFemaleYellow.jpg"
 import puppyFemaleLightGreen from "../assets/images/puppyFace/puppyFemaleLightGreen.jpg"
 
 import puppyMaleBlack from "../assets/images/puppyFace/puppyMaleBlack.jpg"
+
 import puppyMaleBlue from "../assets/images/puppyFace/puppyMaleBlue.jpg"
 import puppyMaleGray from "../assets/images/puppyFace/puppyMaleGray.jpg"
 import puppyMaleLightBlue from "../assets/images/puppyFace/puppyMaleLightBlue.jpg"
@@ -156,7 +160,7 @@ export const puppyList = [
         picture: puppyFemalePurple,
         pictures: [
             {id:1, url: puppyFemalePurple, alt: ""},
-            {id:2, url: "https://placekitten.com/200/206", alt: ""},
+            {id:2, url: puppyFemalePurple2, alt: ""},
             {id:3, url: "https://placekitten.com/200/206", alt: ""},
             {id:5, url: "https://placekitten.com/200/206", alt: ""},
             {id:6, url: "https://placekitten.com/200/206", alt: ""},

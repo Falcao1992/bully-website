@@ -34,24 +34,26 @@ const Puppy = () => {
                         </a>
                     </div>
                     
-                    <ul className="space-y-2">
+                    <ul className="space-y-1">
                         <li className="capitalize">Nom: {currentPuppy.name}</li>
                         <li>Sexe: {currentPuppy.sexe}</li>
+                        <li>Date de naissance: 01/11/2019: {currentPuppy.birthday}</li>
                     </ul>
                 </div>
             </section>
             
             <section className="p-4 py-8 md:py-20 md:px-32 bg-gray-300">
                 <h2 className="text-center">Photos de <span className="capitalize">{currentPuppy.name}</span></h2>
-                <div className="grid grid-cols-2 px-4 py-8 md:grid-cols-5 gap-y-12 gap-x-8 md:px-0">
+                <div className="flex flex-wrap justify-evenly md:justify-center md:space-x-4">
                     {currentPuppy.pictures && currentPuppy.pictures.map((picture) => {
                         return (
                             <a key={picture.id}
                                href={picture.url}
+                               className="w-32 md:w-40 mb-6"
                                target="_blank"
                                rel="noopener noreferrer"
                                aria-label="fullscreen">
-                                <img src={picture.url} alt={picture.alt} />
+                                <img className="h-32 md:h-40 w-full object-cover" src={picture.url} alt={picture.alt} />
                             </a>
                         )
                     })}

@@ -28,17 +28,20 @@ const NavBar = ({activeBurger, closeBurgerTimeout, handleOpenBurger}) => {
                     <div className="flex items-center justify-center flex-1 sm:items-stretch sm:justify-start">
                         <div className="hidden sm:block sm:ml-6">
                             <div className="flex space-x-4 text-white bg-gray-800 bg-opacity-90">
-                                <NavLink exact to="/" onClick={closeBurgerTimeout} activeClassName="bg-gray-900"
+                                <NavLink exact to="/" onClick={closeBurgerTimeout} activeClassName="bg-gray-900 text-yellow-400"
                                          className="px-3 py-2 text-sm font-medium rounded-md hover:bg-gray-700">Accueil</NavLink>
-                                <NavLink to="/genealogy/" onClick={closeBurgerTimeout} activeClassName="bg-gray-900"
+                                <NavLink to="/genealogy/" onClick={closeBurgerTimeout} activeClassName="bg-gray-900 text-yellow-400"
                                          className="px-3 py-2 text-sm font-medium rounded-md hover:bg-gray-700">Généalogie</NavLink>
-                                <NavLink to="/puppy-litters/" onClick={closeBurgerTimeout} activeClassName="bg-gray-900"
+                                <NavLink to="/puppy-litters/" onClick={closeBurgerTimeout} activeClassName="bg-gray-900 text-yellow-400"
                                          className="px-3 py-2 text-sm font-medium rounded-md hover:bg-gray-700">La
                                     Portée</NavLink>
-                                <NavLink to="/contact/" onClick={closeBurgerTimeout} activeClassName="bg-gray-900"
+                                <NavLink to="/contact/" onClick={closeBurgerTimeout} activeClassName="bg-gray-900 text-yellow-400"
                                          className="px-3 py-2 text-sm font-medium rounded-md hover:bg-gray-700">Contact</NavLink>
                             </div>
                         </div>
+                    </div>
+                    <div className="text-white mr-4 helperCenter text-yellow-400 text-sm font-thin tracking-wide">
+                        <span>American Bully XL</span>
                     </div>
                     <div>
                         <Link to="/puppy-litters/">
@@ -51,22 +54,22 @@ const NavBar = ({activeBurger, closeBurgerTimeout, handleOpenBurger}) => {
             <div className={`sm:hidden fixed z-30 w-full bg-gray-800 bg-opacity-90 transition duration-700 ease-in-out ${activeBurger ? 'transform translate-y-0': 'transform -translate-y-full'}`} id="mobile-menu">
                 <div className="px-2 pt-2 pb-3 space-y-1 text-white z-40">
                     <NavLink exact to="/"
-                             onClick={closeBurgerTimeout} activeClassName="bg-gray-900"
+                             onClick={closeBurgerTimeout} activeClassName="bg-gray-900 text-yellow-400"
                              className="block px-3 py-2 font-medium text-center rounded-md">
                         Accueil
                     </NavLink>
                     <NavLink to="/genealogy/"
-                             onClick={closeBurgerTimeout} activeClassName="bg-gray-900"
+                             onClick={closeBurgerTimeout} activeClassName="bg-gray-900 text-yellow-400"
                              className="block px-3 py-2 font-medium text-center rounded-md">
                         Généalogie
                     </NavLink>
                     <NavLink to="/puppy-litters/"
-                             onClick={closeBurgerTimeout} activeClassName="bg-gray-900"
+                             onClick={closeBurgerTimeout} activeClassName="bg-gray-900 text-yellow-400"
                              className="block px-3 py-2 font-medium text-center rounded-md">
                         La portée
                     </NavLink>
                     <NavLink to="/contact/"
-                             onClick={closeBurgerTimeout} activeClassName="bg-gray-900"
+                             onClick={closeBurgerTimeout} activeClassName="bg-gray-900 text-yellow-400"
                              className="block px-3 py-2 font-medium text-center rounded-md">
                         Contact
                     </NavLink>

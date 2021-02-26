@@ -8,11 +8,12 @@ import bullySits from "../assets/images/bullySits.png"
 const HomePage = () => {
     return (
         <div>
-            <section className="px-8 my-20 text-center md:p-20 relative">
+            <section className="mx-4 my-8 md:px-28 md:py-14">
                 <img className="fixed top-56 left-0 opacity-20 -z-10"
                      src={bullySits}
                      alt='bully background transparent' />
-                <p>
+                <h1>American Bully XL</h1>
+                <p className="text-lg">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet at beatae dicta dolores
                     esse ex ipsa iusto, labore laudantium magnam nisi veniam. A blanditiis dolorum harum ipsum laborum
                     odit quia?

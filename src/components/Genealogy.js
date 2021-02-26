@@ -11,7 +11,7 @@ const Genealogy = () => {
     return (
         <div className="">
             <section className="mx-4 my-8 md:px-28 md:py-14">
-                <h2>Les Parents</h2>
+                <h1>Les Parents</h1>
                 <p className="text-lg">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet at beatae dicta dolores
                     esse ex ipsa iusto, labore laudantium magnam nisi veniam. A blanditiis dolorum harum ipsum laborum

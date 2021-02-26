@@ -7,6 +7,21 @@ body {
     font-family: 'Zilla Slab', serif;
 }
 
+.helperCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media only screen and (min-width:768px) {
+    .helperCenter {
+        position: static;
+        margin-right: 2rem;
+        transform: none;
+    }
+}
+
 @layer base {
     html {
         @apply bg-gray-100
