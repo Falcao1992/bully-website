@@ -2,11 +2,11 @@ import React, {useState} from 'react'
 
 import Header from "./Header"
 import NavBar from "./NavBar"
-import homeBanner from "../assets/images/homeBanner.jpg"
-import puppyLittersBanner from "../assets/images/puppyLittersBanner.jpg"
-import puppyBanner from "../assets/images/puppyBanner.jpg"
-import genealogyBanner from "../assets/images/genealogyBanner.jpg"
-import contactBanner from "../assets/images/contactBanner.jpeg"
+import homeBanner from "../../assets/images/homeBanner.jpg"
+import puppyLittersBanner from "../../assets/images/puppyLittersBanner.jpg"
+import puppyBanner from "../../assets/images/puppyBanner.jpg"
+import genealogyBanner from "../../assets/images/genealogyBanner.jpg"
+import contactBanner from "../../assets/images/contactBanner.jpeg"
 
 import { Icon} from '@iconify/react';
 import arrowUpCircle from '@iconify/icons-bi/arrow-up-circle';

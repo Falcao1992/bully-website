@@ -1,7 +1,7 @@
 import React from 'react'
 
-import momPicture from "../assets/images/mother.jpg"
-import dadPicture from "../assets/images/father.jpg"
+import momPicture from "../../assets/images/mother.jpg"
+import dadPicture from "../../assets/images/father.jpg"
 import maleIcon from "@iconify/icons-ion/male"
 import {InlineIcon} from "@iconify/react"
 import femaleIcon from "@iconify/icons-ion/female"

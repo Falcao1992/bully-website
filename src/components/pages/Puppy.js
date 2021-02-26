@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import {useParams} from "react-router-dom"
-import {puppyList} from "../puppyList/puppyList"
+import {puppyList} from "../../puppyList/puppyList"
 
 const Puppy = () => {
     const [currentPuppy, setCurrentPuppy] = useState({})
@@ -37,7 +37,7 @@ const Puppy = () => {
                     <ul className="space-y-1">
                         <li className="capitalize">Nom: {currentPuppy.name}</li>
                         <li>Sexe: {currentPuppy.sexe}</li>
-                        <li>Date de naissance: 01/11/2019: {currentPuppy.birthday}</li>
+                        <li>Date de naissance: {currentPuppy.birthday}</li>
                     </ul>
                 </div>
             </section>

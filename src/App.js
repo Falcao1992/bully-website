@@ -1,12 +1,12 @@
 import React from 'react'
 import {BrowserRouter as Router, Switch } from "react-router-dom"
-import HomePage from "./components/HomePage"
-import PuppyLitters from "./components/PuppyLitters"
-import Puppy from "./components/Puppy"
+import HomePage from "./components/pages/HomePage"
+import PuppyLitters from "./components/pages/PuppyLitters"
+import Puppy from "./components/pages/Puppy"
 
-import LayoutManage from "./components/LayoutManage"
-import Genealogy from "./components/Genealogy"
-import Contact from "./components/Contact"
+import LayoutManage from "./components/layout/LayoutManage"
+import Genealogy from "./components/pages/Genealogy"
+import Contact from "./components/pages/Contact"
 
 const App = () => {
     
