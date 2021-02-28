@@ -20,7 +20,7 @@ const PuppyLitters = () => {
                     <li>Mère: <Link className="text-pink-400 ml-0.5" to="/genealogy#shila">Shila</Link></li>
                     <li>Père: <Link className="text-blue-400 ml-0.5" to="/genealogy#zorg">Zorg</Link></li>
                     <li>Nombres de Chiots: 13</li>
-                    <li>Date de naissance: 01/11/2019</li>
+                    <li>Date de naissance: 21/01/2021</li>
                 </ul>
                 <p className="text-lg">
                     Nous sommes ravis de vous présenter la portée de Shila et de Zorg, deux magnifique American

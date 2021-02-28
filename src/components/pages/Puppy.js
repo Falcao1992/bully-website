@@ -20,8 +20,6 @@ const Puppy = () => {
         <div>
             <section>
                 <div className="flex flex-col items-center p-4 py-8 md:py-20 md:px-32 md:flex-row md:w-4/5 md:mx-auto">
-                    
-                    
                     <div className="p-1 mb-10 bg-pink-300 rounded-lg md:mr-10 md:mb-0 md:w-1/4">
                         <a className="block p-1 bg-white rounded-lg"
                            href={currentPuppy.picture}
@@ -38,6 +36,7 @@ const Puppy = () => {
                         <li className="capitalize">Nom: {currentPuppy.name}</li>
                         <li>Sexe: {currentPuppy.sexe}</li>
                         <li>Date de naissance: {currentPuppy.birthday}</li>
+                        <li>Disponibilité: {currentPuppy.available ? "En attente d'une famille" : "Une famille m'a deja choisis"}</li>
                     </ul>
                 </div>
             </section>

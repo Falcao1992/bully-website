@@ -33,7 +33,7 @@ const HomePage = () => {
                    href="https://www.toutoupourlechien.com/race-de-chien/american-bully.html"
                    target="_blank"
                    rel="noopener noreferrer">
-                    <span>Voir la source</span>
+                    <span>En savoir plus</span>
                 </a>
             </section>
             

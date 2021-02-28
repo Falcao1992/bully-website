@@ -19,35 +19,40 @@ const Contact = () => {
                     <li>- Un paquet de ses croquettes habituelles vous sera offert.</li>
                     <li>- Comme pour l'arrivée d'un nouveau-né au sein d'une famille, l'arrivée d'un chiot, votre nouveau compagnon, doit être pensée et mûrement réfléchie.</li>
                 </ul>
-                <p className="text-center my-8 font-semibold">Pour valider une réservation un acompte vous sera demandé.</p>
+                <p className="my-8 font-semibold text-center">Pour valider une réservation un acompte vous sera demandé.</p>
             </section>
             
-            <section className="flex flex-col items-center p-4 py-8 md:py-20 md:px-32 bg-gray-300">
-                <h2 className="text-center">Nous Contactez</h2>
-                <div className="flex flex-col md:p-4 justify-evenly place-items-start md:flex-row space-y-6 md:space-y-0">
-                    <div className="flex flex-col items-center text-center md:w-1/4">
-                        <img className="rounded-lg w-3/4" src="https://i.pravatar.cc/305" alt="" />
-                        <div className="my-4">
-                            <p className="text-2xl">Julie Lépine</p>
-                            <p className="my-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aspernatur atque
-                                fugiat illum molestiae possimus? Adipisci alias aliquid aperiam aut autem eum .
-                            </p>
-                            <ul>
-                                <li className="mb-2"><a className="text-xl font-sans" href="tel:0668626414" aria-label="phone"><InlineIcon className="inline" icon={mobilePhone}/> 0668626414</a></li>
+            <section className="flex flex-col items-center p-4 py-8 bg-gray-300 md:py-20 md:px-32 bg-gray-800">
+                <h2 className="text-center text-yellow-400">Nous Contactez</h2>
+                <div className="flex flex-col space-y-6 md:p-4 justify-evenly place-items-start md:flex-row md:space-y-0 md:space-x-8">
+                    
+                    <div className="flex flex-col items-center flex-1">
+                        <img className="object-cover w-11/12 h-56 rounded-lg" src="https://i.pravatar.cc/305" alt="" />
+                        <div className="my-6 w-full">
+                            <p className="text-2xl text-center text-white">Julie Lépine</p>
+                            <ul className="my-6 text-white text-yellow-400 font-light">
+                                <li>Question relative au chiots.</li>
+                                <li>Modalité d'adoption.</li>
+                                <li>Demande de photo</li>
+                            </ul>
+                            <ul className="text-white">
+                                <li className="mb-2"><a className="font-sans text-xl" href="tel:0668626414" aria-label="phone"><InlineIcon className="inline" icon={mobilePhone}/> 0668626414</a></li>
                                 <li><a className="text-xl" href="mailto:lepine_julie@orange.fr" aria-label="mail"><InlineIcon className="inline" icon={mailIcon} /> lepine_julie@orange.fr</a></li>
                             </ul>
                         </div>
                     </div>
     
-                    <div className="flex flex-col justify-center items-center text-center md:w-1/4">
-                        <img className="rounded-lg w-3/4" src="https://i.pravatar.cc/302" alt="" />
-                        <div className="my-4">
-                            <p className="text-2xl">Steven Thang</p>
-                            <p className="my-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aspernatur atque
-                                fugiat illum molestiae possimus? Adipisci alias aliquid aperiam aut autem eum .
-                            </p>
-                            <ul>
-                                <li className="mb-2"><a className="text-xl font-sans" href="tel:0668684272" aria-label="phone"><InlineIcon className="inline" icon={mobilePhone}/> 0668684272</a></li>
+                    <div className="flex flex-col items-center justify-center flex-1">
+                        <img className="object-cover w-11/12 h-56 rounded-lg" src="https://i.pravatar.cc/302" alt="" />
+                        <div className="my-6 w-full">
+                            <p className="text-2xl text-center text-white">Steven Thang</p>
+                            <ul className="my-6 text-yellow-400 font-light">
+                                <li>Question relative au chiots.</li>
+                                <li>Modalité d'adoption.</li>
+                                <li>Informations sur la lignée des parents.</li>
+                            </ul>
+                            <ul className="text-white">
+                                <li className="mb-2"><a className="font-sans text-xl" href="tel:0668684272" aria-label="phone"><InlineIcon className="inline" icon={mobilePhone}/> 0668684272</a></li>
                                 <li><a className="text-xl" href="https://www.facebook.com/profile.php?id=100010109858069" target="_blank" rel="noopener noreferrer"><InlineIcon className="inline" icon={facebookRect}/> Steve BullyXl</a></li>
                             </ul>
                         </div>
