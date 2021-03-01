@@ -45,7 +45,7 @@ const PuppyLitters = () => {
                 
                 <div className="p-4 py-8 md:p-20">
                     <h2 className="mb-8 text-4xl font-medium tracking-wider text-center">Les
-                        Mâle <InlineIcon className="inline text-blue-400" icon={maleIcon} /></h2>
+                        Mâles <InlineIcon className="inline text-blue-400" icon={maleIcon} /></h2>
                     <ul className="flex flex-wrap justify-evenly md:justify-center md:space-x-4">
                         {puppyList.filter((puppy) => puppy.sexe === "male").map((puppy) => {
                             return (

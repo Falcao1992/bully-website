@@ -3,7 +3,7 @@ import React, {useState} from 'react'
 import Header from "./Header"
 import NavBar from "./NavBar"
 import homeBanner from "../../assets/images/homeBanner.jpg"
-import puppyLittersBanner from "../../assets/images/puppyLittersBanner.jpg"
+import puppyLittersBanner from "../../assets/images/puppyLittersBanner.jpeg"
 import puppyBanner from "../../assets/images/puppyBanner.jpg"
 import genealogyBanner from "../../assets/images/genealogyBanner.jpg"
 import contactBanner from "../../assets/images/contactBanner.jpeg"
@@ -44,7 +44,7 @@ const Layout = props => {
             return <Header banner={homeBanner} objectPos={'center'} />
         } else if (path === '/puppy-litters/') {
             console.log('PUPPY LITTER')
-            return <Header banner={puppyLittersBanner} objectPos={'bottom'} />
+            return <Header banner={puppyLittersBanner} objectPos={'center'} />
         } else if (path.includes('/puppy/')) {
             console.log("PUPPY")
             return <Header banner={puppyBanner} objectPos={'bottom'} />
@@ -53,7 +53,7 @@ const Layout = props => {
             return <Header banner={genealogyBanner} objectPos={'center'} />
         } else if(path === '/contact/') {
             console.log("CONTACT")
-            return <Header banner={contactBanner} objectPos={'bottom'} />
+            return <Header banner={contactBanner} objectPos={'top'} />
         } else {
             console.log("AUTRE")
             console.log(path)

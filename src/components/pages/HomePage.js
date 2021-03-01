@@ -1,6 +1,6 @@
 import React from 'react'
 
-import puppyLittersBanner from '../../assets/images/puppyLittersBanner.jpg'
+import puppyLittersBanner from '../../assets/images/puppyLittersBanner.jpeg'
 import genealogyBanner from '../../assets/images/genealogyBanner.jpg'
 import contactBanner from '../../assets/images/contactBanner.jpeg'
 import {Link} from "react-router-dom"
