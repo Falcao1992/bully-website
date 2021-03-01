@@ -22,37 +22,37 @@ const Contact = () => {
                 <p className="my-8 font-semibold text-center">Pour valider une réservation un acompte vous sera demandé.</p>
             </section>
             
-            <section className="flex flex-col items-center p-4 py-8 bg-gray-300 md:py-20 md:px-32 bg-gray-800">
+            <section className="flex flex-col items-center p-4 py-8 md:py-20 bg-gray-800">
                 <h2 className="text-center text-yellow-400">Nous Contactez</h2>
-                <div className="flex flex-col space-y-6 md:p-4 justify-evenly place-items-start md:flex-row md:space-y-0 md:space-x-8">
+                <div className="flex flex-col md:w-3/5 space-y-6 md:p-4 justify-evenly place-items-start md:flex-row md:space-y-0 md:space-x-8">
                     
                     <div className="flex flex-col items-center flex-1">
                         <img className="object-cover w-11/12 h-56 rounded-lg" src={avatarWoman} alt="" />
-                        <div className="my-6 w-full">
+                        <div className="w-full my-6">
                             <p className="text-2xl text-center text-white">Sarah Connor</p>
-                            <ul className="my-6 text-white text-yellow-400 font-light">
+                            <ul className="my-6 font-light text-white text-yellow-400">
                                 <li>Question relative au chiots.</li>
                                 <li>Modalité d'adoption.</li>
                                 <li>Demande de photo</li>
                             </ul>
                             <ul className="text-white">
-                                <li className="mb-2"><a className="font-sans text-xl" href="tel:0668626424" aria-label="phone"><InlineIcon className="inline" icon={mobilePhone}/> 0668626424</a></li>
-                                <li><a className="text-xl" href="mailto:sarah_connor@orange.fr" aria-label="mail"><InlineIcon className="inline" icon={mailIcon} /> sarah_connor@orange.fr</a></li>
+                                <li className="mb-2"><a className="font-sans text-sm" href="tel:0668626424" aria-label="phone"><InlineIcon className="inline" icon={mobilePhone}/> 0668626424</a></li>
+                                <li><a className="text-sm" href="mailto:sarah_connor@orange.fr" aria-label="mail"><InlineIcon className="inline" icon={mailIcon} /> sarah_connor@orange.fr</a></li>
                             </ul>
                         </div>
                     </div>
     
                     <div className="flex flex-col items-center justify-center flex-1">
                         <img className="object-cover w-11/12 h-56 rounded-lg" src={avatarMan} alt="" />
-                        <div className="my-6 w-full">
+                        <div className="w-full my-6">
                             <p className="text-2xl text-center text-white">John Doe</p>
-                            <ul className="my-6 text-yellow-400 font-light">
+                            <ul className="my-6 font-light text-yellow-400">
                                 <li>Question relative au chiots.</li>
                                 <li>Modalité d'adoption.</li>
                                 <li>Informations sur la lignée des parents.</li>
                             </ul>
-                            <ul className="text-white">
-                                <li className="mb-2"><a className="font-sans text-xl" href="tel:0678684272" aria-label="phone"><InlineIcon className="inline" icon={mobilePhone}/> 0678684272</a></li>
+                            <ul className="text-sm text-white">
+                                <li className="mb-2"><a className="font-sans text-sm" href="tel:0678684272" aria-label="phone"><InlineIcon className="inline" icon={mobilePhone}/> 0678684272</a></li>
                             </ul>
                         </div>
                     </div>
